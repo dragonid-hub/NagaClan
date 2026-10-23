@@ -1,0 +1,45 @@
+name: NagaClan
+version: 1.0.8
+main: id.dragon.nagaclan.NagaClanPlugin
+api-version: '1.21'
+softdepend: [Vault, ExcellentEconomy, LuckPerms, PlaceholderAPI, ViaVersion]
+commands:
+  clan:
+    description: Perintah utama NagaClan
+    usage: /clan
+  nc:
+    description: Administrasi NagaClan
+  nagaclan:
+    description: Administrasi NagaClan
+permissions:
+  # Permissions never replace clan-role checks. These defaults preserve existing player access.
+  nagaclan.command.create: { default: true }
+  nagaclan.command.accept: { default: true }
+  nagaclan.command.deny: { default: true }
+  nagaclan.command.invite: { default: true }
+  nagaclan.command.leave: { default: true }
+  nagaclan.command.kick: { default: true }
+  nagaclan.command.setbuilder: { default: true }
+  nagaclan.command.setadmin: { default: true }
+  nagaclan.command.setleader: { default: true }
+  nagaclan.command.disband: { default: true }
+  nagaclan.command.menu: { default: true }
+  nagaclan.command.home: { default: true }
+  nagaclan.command.sethome: { default: true }
+  nagaclan.command.delhome: { default: true }
+  nagaclan.command.settings: { default: true }
+  nagaclan.command.top: { default: true }
+  nagaclan.command.level: { default: true }
+  nagaclan.command.alliance: { default: true }
+  nagaclan.bank.deposit: { default: true }
+  nagaclan.bank.withdraw: { default: true }
+  nagaclan.bank.settings: { default: true }
+  nagaclan.settings: { default: true }
+  nagaclan.chat:
+    description: Mengirim pesan dan mengaktifkan mode chat khusus clan.
+    default: true
+  nagaclan.admin.reload: { default: op }
+  nagaclan.admin.save: { default: op }
+  nagaclan.admin.version: { default: op }
+  nagaclan.sethome.*: { default: op }
+  nagaclan.maxbank.*: { default: op }
